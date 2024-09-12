@@ -1,4 +1,4 @@
-package com.example.login_and_signup_usingfirebase
+package com.example.login_and_signup_usingfirebase.pages
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -34,7 +34,8 @@ class AuthViewModel: ViewModel() {
                 if(task.isSuccessful){
                     _authState.value = AuthState.Authenticated
                 } else {
-                    _authState.value = AuthState.Error(task.exception?.message?:"Something went wrong")
+                    _authState.value =
+                        AuthState.Error(task.exception?.message ?: "Something went wrong")
                 }
             }
     }
@@ -50,7 +51,8 @@ class AuthViewModel: ViewModel() {
                 if(task.isSuccessful){
                     _authState.value = AuthState.Authenticated
                 } else {
-                    _authState.value = AuthState.Error(task.exception?.message?:"Something went wrong")
+                    _authState.value =
+                        AuthState.Error(task.exception?.message ?: "Something went wrong")
                 }
             }
     }

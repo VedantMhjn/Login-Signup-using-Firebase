@@ -1,10 +1,11 @@
-package com.example.login_and_signup_usingfirebase
+package com.example.login_and_signup_usingfirebase.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.login_and_signup_usingfirebase.pages.AuthViewModel
 import com.example.login_and_signup_usingfirebase.pages.HomePage
 import com.example.login_and_signup_usingfirebase.pages.LoginPage
 import com.example.login_and_signup_usingfirebase.pages.SignUpPage

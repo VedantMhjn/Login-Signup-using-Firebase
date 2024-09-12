@@ -12,8 +12,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import com.example.login_and_signup_usingfirebase.AuthState
-import com.example.login_and_signup_usingfirebase.AuthViewModel
 
 @Composable
 fun HomePage(modifier: Modifier, navController: NavHostController, authViewModel: AuthViewModel) {
